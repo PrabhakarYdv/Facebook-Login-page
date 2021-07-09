@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3B5998"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/fb_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/fb_logo_circle"
+        android:padding="30dp"
+        android:src="@drawable/fb_logo" />
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fb_logo"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/roboto"
+        android:text="Enter username or email id"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/line_1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/userName"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="5dp"
+        android:background="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line_1"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/roboto"
+        android:text="Password"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp" />
+
+    <View
+        android:id="@+id/line_2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/password"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="5dp"
+        android:background="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line_2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="LOGIN"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/forgotPassword"
+        android:layout_centerHorizontal="true"
+
+        android:fontFamily="@font/roboto"
+        android:text="Sign up for facebook"
+        android:textColor="#FFFFFF"
+        android:textSize="22dp" />
+
+    <TextView
+        android:id="@+id/forgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="@font/roboto"
+        android:text="Forgot password?"
+        android:textColor="#FFFFFF"
+        android:textSize="22dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/forgotPassword"
+        android:layout_alignBottom="@id/forgotPassword"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/forgotPassword"
+        android:background="@drawable/question_mark_circle"
+        android:padding="10dp"
+        android:src="@drawable/question_mark" />
+
+</RelativeLayout>
